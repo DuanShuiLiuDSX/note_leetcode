@@ -6,7 +6,7 @@ public class Main {
 	// write your code here
         System.out.println("11");
         System.out.println("sss");
-        System.out.println("test");ss
+        System.out.println("test");
         System.out.println("branchTest");
     }
 }
