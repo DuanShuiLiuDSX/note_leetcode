@@ -1,7 +1,5 @@
 package com.company.ArrayList;
 
-import com.company.Main;
-
 public class No16 {
     public int threeSumClosest(int[] nums, int target) {
         int res =nums[0]+nums[1]+nums[2];

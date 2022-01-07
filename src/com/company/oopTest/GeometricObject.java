@@ -1,0 +1,37 @@
+package com.company.oopTest;
+
+/**
+ * @author cz
+ * @Description
+ * @date 2021/12/15 19:51
+ **/
+public class GeometricObject {
+    private String color;
+    private double weight;
+
+
+    public double findArea(){
+        return 0.0;
+    }
+
+    public GeometricObject(String color, double weight) {
+        this.color = color;
+        this.weight = weight;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+}
