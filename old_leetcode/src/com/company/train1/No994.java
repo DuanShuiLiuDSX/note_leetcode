@@ -1,7 +1,5 @@
 package com.company.train1;
 
-import javax.sound.midi.Synthesizer;
-import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.Queue;
 

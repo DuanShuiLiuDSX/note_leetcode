@@ -1,4 +1,4 @@
-//package com.company.oopTest;
+package com.company.oopTest;//package com.company.oopTest;
 //
 //import java.util.Random;
 //

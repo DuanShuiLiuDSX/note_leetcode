@@ -1,18 +1,14 @@
 package com.company.oopTest;
 
 import com.company.oopTest.day18.Account;
-import org.junit.Test;
-
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.Queue;
-
+import org.junit.jupiter.api.Test;
 /**
  * @author cz
  * @Description
  * @date 2021/12/15 17:08
  **/
 public class AllTest {
+
     @Test
     public void Test1(){
         double data = 12.2;

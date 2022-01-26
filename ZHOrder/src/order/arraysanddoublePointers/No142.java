@@ -1,4 +1,4 @@
-package com.order.arraysanddoublePointers;
+package order.arraysanddoublePointers;
 
 /**
  * @author cz

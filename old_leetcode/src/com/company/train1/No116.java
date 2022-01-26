@@ -1,8 +1,5 @@
 package com.company.train1;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 /**
  * @author cz
  * @Description  eg1: 常规解法
