@@ -1,4 +1,4 @@
-package com.company.ArrayList;
+package order.dynamicProgramming;
 
 import org.junit.jupiter.api.Test;
 

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ZHOrder/ZHOrder.iml" filepath="$PROJECT_DIR$/ZHOrder/ZHOrder.iml" />
       <module fileurl="file://$PROJECT_DIR$/note_leetcode.iml" filepath="$PROJECT_DIR$/note_leetcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nowcoder/nowcoder.iml" filepath="$PROJECT_DIR$/nowcoder/nowcoder.iml" />
       <module fileurl="file://$PROJECT_DIR$/old_leetcode/old_leetcode.iml" filepath="$PROJECT_DIR$/old_leetcode/old_leetcode.iml" />
     </modules>
   </component>
