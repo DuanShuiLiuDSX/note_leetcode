@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 /**
  * @author cz
- * @Description
+ * @Description 循环遍历矩阵
  * @date 2022/4/20 10:38
  **/
 public class No29 {
@@ -40,5 +40,9 @@ public class No29 {
             }
             return  res;
         }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(11);
     }
 }
