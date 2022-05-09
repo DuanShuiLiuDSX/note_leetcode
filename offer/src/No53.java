@@ -7,29 +7,20 @@ import java.util.Stack;
  **/
 public class No53 {
     public int GetNumberOfK(int [] array , int k) {
-        int left = 0, right = array.length - 1;
-        return search(array, k, right, left);
-
+        return binarySearch(array, 0, array.length-1, k);
     }
 
-    private int search(int [] array, int target, int right, int left){
-        if(right < left) return 0;
-        if(right == left){
-            if(array[left] == target){
-                return 1;
-            }
+    public int binarySearch(int[] array, int left, int right, int target){
+        if(left > right){
             return 0;
         }
-        int mid = left + (right - left) / 2;
-        if(array[mid] == target){
-            return 1 + search(array, target, mid - 1, left) + search(array, target, right, mid + 1);
-        }
-        if(array[mid] < target && array[right] >= target){
-            return search(array, target, right, mid + 1);
-        }
-        if(array[mid] > target && array[left] <= target){
-            return search(array, target, left, mid - 1);
-        }
-        return 0;
+        int mid = (left+right)/2;
+        if(array[mid]==target){
+            return 1+binarySearch(array, left, mid-1, target)+
+                    binarySearch(array, mid+1, right, target);
+        }else if(array[mid]> target)
+            return binarySearch(array, left, mid-1, target);
+        else
+            return binarySearch(array, mid+1, right, target);
     }
 }
