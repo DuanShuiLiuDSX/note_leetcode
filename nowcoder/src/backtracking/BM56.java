@@ -26,7 +26,7 @@ public class BM56 {
             }
             for(int i=0; i<n; i++){
                 if(!visit[i]){
-                    // 回溯回来时， 当当前位置的元素和 和前一个元素相同时 且 前一个元素已经被访问了（即前一个元素在subRes中）
+                    // 回溯回来时， 当当前位置的元素和 和前一个元素相同时 且 前一个元素已经被访问了又重新从subRes释放（即前一个元素在subRes中）
                     if(i>0 && num[i]==num[i-1] && !visit[i-1] ){
                         continue;
                     }
