@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import java.util.ArrayList;
 import java.util.Stack;
 
@@ -12,42 +12,44 @@ public class No55 {
     public class Solution1 {
         public int TreeDepth(TreeNode root) {
             ArrayList<TreeNode> stack = new ArrayList<TreeNode>();
-            if (root==null) return 0;
-            int res=0;
+            if (root == null) return 0;
+            int res = 0;
             stack.add(root);
-            while (stack.isEmpty()==false){
+            while (stack.isEmpty() == false) {
                 int size = stack.size();
-                for (int i=0; i<size; i++){
+                for (int i = 0; i < size; i++) {
                     TreeNode temp = stack.get(i);
-                    if (temp.left!=null) stack.add(temp.left);
-                    if (temp.right!=null) stack.add(temp.right);
+                    if (temp.left != null) stack.add(temp.left);
+                    if (temp.right != null) stack.add(temp.right);
                     stack.remove(0);
                 }
                 res++;
             }
-            return  res;
+            return res;
         }
 
-        public int dfs(TreeNode root){
-            if (root==null)return 0;
+        public int dfs(TreeNode root) {
+            if (root == null) return 0;
             int nLeft = dfs(root.left);
             int nRight = dfs(root.right);
-            return nLeft > nRight ? nLeft+1 : nRight+1;
-=======
+            return nLeft > nRight ? nLeft + 1 : nRight + 1;
+        }
+    }
+}
 /**
  * @author cz
  * @Description 求二叉树深度
  *   递归解法
  * @date 2022/5/9 10:10
  **/
-public class No55 {
-    public class Solution {
-        public int TreeDepth(TreeNode root) {
-            if(root==null) return 0;
-            int leftDepth = TreeDepth(root.left);
-            int rightDepth = TreeDepth(root.right);
-            return leftDepth>rightDepth ? leftDepth+1 : rightDepth+1;
->>>>>>> 44dc60f99f47b02d95506ee7ed798abae9b38f2c
-        }
-    }
-}
+//public class No55 {
+//    public class Solution {
+//        public int TreeDepth(TreeNode root) {
+//            if(root==null) return 0;
+//            int leftDepth = TreeDepth(root.left);
+//            int rightDepth = TreeDepth(root.right);
+//            return leftDepth>rightDepth ? leftDepth+1 : rightDepth+1;
+//
+//        }
+//    }
+//}
