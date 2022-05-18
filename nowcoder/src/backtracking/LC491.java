@@ -23,10 +23,11 @@ public class LC491 {
     public void backStrack(int[] nums,int n, int startIndex){
         if(subRes.size()>=2){
             res.add(new ArrayList(subRes));
+            //  不需要返回值 返回 当startIndex = n 时，不执行下面的循环，自动就会返回
         }
         // for 循环 树的横向
         // backStrack 树的纵向
-        int[] used=new int[201];
+        int[] used=new int[201];  // 用一个标志数组 来判断 是否有与当前元素相同的元素，已经被遍历过了
         for(int i=startIndex; i<n; i++){
             if (!subRes.isEmpty() && nums[i] < subRes.get(subRes.size() - 1) || used[nums[i] + 100] == 1)
                 continue;
